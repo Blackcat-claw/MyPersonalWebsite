@@ -1,0 +1,13 @@
+git push -u origin master
+
+git remote add origin https://github.com/Blackcat-claw/blackcatto.github.io.git
+
+git status
+
+git commit -m "first commit" .
+
+git status
+
+git add .
+
+git init
