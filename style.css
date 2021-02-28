@@ -16,7 +16,7 @@ section{
 	height:95vh;
 	background-image:url("tester.jpg");
 	background-size:cover;
-	background-repeat:no-repeat;
+	background-repeat:repeat;
 	position: relative;
 }
 nav {
@@ -32,9 +32,7 @@ nav {
 nav ul{
 	display: flex;
 }
-.toggle{
-	display: none;
-}
+
  
 nav ul li a{
 	margin:30px;
@@ -93,12 +91,7 @@ nav ul li a{
 	top:42%;
 	transform:translate(-13%,-42%);
 }
-.hire-btn{
-	border:2px solid #373636;
-	color:#373636;
-	background-color:transparent;
-	
-}
+
 .down-cv{
 	background-color:#0B0B0B;
 	color:#fff;	
@@ -158,39 +151,29 @@ button:active{
   
 .Educational_background{	
 	font-family: calibri;
-	padding: 2% 10% 0px 10%;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	font-weight:bold;
 	color:#1d1c1c;
 	font-size:30px;
 	line-height:0px;
-  }
+  } 
 
-/*.Educational_background{	
-	font-family: calibri;
-	padding: 2% 10% 0px 10%;
-	font-weight:bold;
-	color:#1d1c1c;
-	font-size:30px;
-	line-height:0px;
-  } */
   /*TABLE */
 * {
 	font-family: sans-serif; /* Change your font family */
   }
-  .table-design {
-
+  .content-table {
 	border-radius:20px;
-	display: flex;
-	padding: 0px 10% 0px 10%;
-
-	
+	margin-left:auto; 
+	margin-right:auto;
   }
   .content-table {
 	border-collapse: collapse;
 	margin: 25px auto;
 	font-size: 0.9em;
-	min-width: 400px;
+	min-width: 100px;
 	border-radius: 5px 5px 0 0;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -231,7 +214,7 @@ button:active{
 	width: 100%;
 	height:280px;
 	background-size:cover;
-	background-repeat:no-repeat;
+	background-repeat:no repeat;
 	background-image: url("project in your mind.png");
 	display: flex;
 	flex-direction: column;
@@ -318,14 +301,14 @@ footer{
 	font-size:20px;
 	color:#2B2B2B;
 }
-@media(max-width:1000px){
+/* MEDIA */
+@media(max-width:768px){
 	*{
 		box-sizing: border-box;
 	}
-	.model{
-		height: 460px;
-		left: 90%;
-		transform: translateX(-90%);
+	.content-table {
+		margin-left:auto; 
+		margin-right:auto;
 	}
 	.text-container{
 		top:46%;
@@ -374,17 +357,10 @@ footer{
 	.contact-me p{
 		font-size: 26px;
 	}
-	.contact-me button{
-		font-size: 14px;
-		height:35px;
-		width: 160px;
-	}
+
 }
-@media(max-width:750px){
-	section{
-		background-image:none;
-		background-color:#f7f7f7;
-	}
+@media(max-width:972px){
+	
 	.model{
 		display: none;
 	}
@@ -470,12 +446,38 @@ footer{
 	.contact-me p{
 		font-size: 18px;
 	}
-	.contact-me button{
-		width: 150px;
-		height: 33px;
-	}
-	footer p:nth-child(2){
-		width: 90%;
-	}
 	
+	
+@media(max-width:351px){
+	.Educational_background{	
+	font-family: calibri;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-weight:bold;
+		color:#1d1c1c;
+		font-size:25px;
+		line-height:0px;
+		} 
+	.contact-me p:nth-child(1){
+		color:#FFFFFF;
+		font-size: 20px;
+		font-family: calibri;
+		font-weight:bold;
+		border-bottom:2px solid #ffffff;
+		}
+	}
+
+@media(max-width:291px){
+	.Educational_background{	
+		font-family: calibri;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-weight:bold;
+		color:#1d1c1c;
+		font-size:15px;
+		line-height:0px;
+		}
+	}
 }
